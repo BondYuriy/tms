@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+
+/* Colors */
+
+/* Fonts */
+
+/* title */
+
+/* font-text */
+
+/*------- margin-top ---------*/
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+/*------- margin-bottom ---------*/
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-35 {
+	margin-bottom: 35px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-140 {
+	margin-bottom: 140px;
+}
+
+/*------- margin-left ---------*/
+
+/*------- margin-right ---------*/
+
+.mr-15 {
+	margin-right: 15px;
+}
+
+/*------- paddind-top ---------*/
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+* :not(svg) {
+	transition: 0.5s;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #232d3d;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
