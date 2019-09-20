@@ -1,0 +1,14 @@
+.logo {
+  & a {
+    display: block;
+    width: 195px;
+    height: 100%;
+
+    & svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+}

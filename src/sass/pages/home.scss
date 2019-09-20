@@ -1,0 +1,23 @@
+.home-main-info {
+  background-color: #232d3d;
+  padding-top: 240px;
+  position: relative;
+  margin-bottom: 2000px;
+
+  &::before {
+    display: block;
+    content: "";
+    background-color: rgba(9, 12, 16, 0.41);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

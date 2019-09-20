@@ -1,0 +1,38 @@
+.contact-box {
+  & a {
+    display: block;
+    color: $text-color;
+    letter-spacing: -0.2px;
+  }
+
+  & .address {
+    margin-bottom: 2px;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  & .phone-number {
+    font-size: 22px;
+    font-weight: $bold;
+    margin-bottom: 2px;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  & .email {
+    color: $blue-color;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    border-bottom: 1px dashed $blue-color;
+
+    &:hover {
+      color: $hover-color;
+      border-bottom: 1px dashed $hover-color;
+    }
+  }
+}
