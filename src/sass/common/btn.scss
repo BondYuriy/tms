@@ -1,0 +1,68 @@
+.btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-green,
+.btn-blue {
+  width: 230px;
+  height: 58px;
+  border-radius: 30px;
+  color: $white-color;
+  font-size: $font-text;
+  font-weight: $Medium;
+  line-height: 58px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-color;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.btn-green {
+  background-image: linear-gradient(180deg, #28b55f 0%, #108e41 100%);
+}
+
+.btn-blue {
+  background-image: linear-gradient(180deg, #37b6fd 0%, #0096ea 100%);
+}
+
+.btn-transparent {
+  width: 220px;
+  height: 54px;
+  border-radius: 29px;
+  border: 2px solid $white-color;
+  color: $white-color;
+  line-height: 50px;
+
+  &:hover {
+    background-color: $white-color;
+  }
+}
+
+.btn-blue-light {
+  width: 160px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: rgba(33, 169, 245, 0.11);
+  color: $blue-color;
+  font-size: 13px;
+  font-weight: $Medium;
+  line-height: 36px;
+
+  &:hover {
+    background-color: rgba(33, 169, 245, 0.21);
+    color: $blue-color;
+  }
+}

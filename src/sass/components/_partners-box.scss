@@ -1,0 +1,30 @@
+.partners-wrapper {
+  background-color: $white;
+}
+
+.partners-box {
+  padding: 94px 0 170px 0;
+
+  & .title {
+    color: $hover-color;
+    font-family: $Raleway;
+    font-size: 27px;
+    font-weight: $bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+  }
+}
+
+.partners-carousel {
+  & .owl-stage {
+    display: flex;
+    align-items: center;
+
+    & .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

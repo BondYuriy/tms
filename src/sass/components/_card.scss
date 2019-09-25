@@ -1,0 +1,87 @@
+.card {
+  border: 0;
+  height: 570px;
+  position: relative;
+
+  & .card-hover-box {
+    width: 350px;
+    height: 570px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    & .card-img {
+      height: 220px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      & img {
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    & .card-info {
+      padding: 20px 10px 60px 10px;
+
+      & .date {
+        display: block;
+        color: rgba(51, 67, 93, 0.71);
+        font-size: 15px;
+        font-weight: 900;
+        margin-bottom: 12px;
+      }
+
+      .title {
+        height: 50px;
+        color: #232d3d;
+        font-family: $Raleway;
+        font-size: 21px;
+        font-weight: $bold;
+        line-height: 24px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+
+      & .text {
+        color: $hover-color;
+        line-height: 23px;
+        height: 160px;
+        overflow: hidden;
+      }
+
+      & .btn {
+        display: none;
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+      }
+    }
+
+    &:hover {
+      width: 380px;
+      height: 590px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.09);
+      background-color: #fcfeff;
+      top: -20px;
+
+      & .card-img {
+        height: 245px;
+      }
+
+      & .card-info {
+        & .btn {
+          display: block;
+        }
+      }
+    }
+  }
+}

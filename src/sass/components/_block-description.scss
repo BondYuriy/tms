@@ -1,0 +1,11 @@
+.block-description {
+  color: $hover-color;
+
+  & .title-box {
+    margin-bottom: 40px;
+  }
+
+  & .btn {
+    margin-top: 26px;
+  }
+}
