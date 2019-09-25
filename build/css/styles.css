@@ -785,6 +785,7 @@ a:hover {
 }
 
 .card .card-hover-box .card-img {
+	display: block;
 	height: 220px;
 	border-radius: 8px;
 	display: flex;
@@ -811,15 +812,23 @@ a:hover {
 	margin-bottom: 12px;
 }
 
-.card .card-hover-box .card-info .title {
+.card .card-hover-box .card-info .title-link {
+	display: block;
 	height: 50px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.card .card-hover-box .card-info .title-link .title {
 	color: #232d3d;
 	font-family: "Raleway", sans-serif;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 24px;
-	overflow: hidden;
-	margin-bottom: 20px;
+}
+
+.card .card-hover-box .card-info .title-link .title:hover {
+	color: #33435d;
 }
 
 .card .card-hover-box .card-info .text {
@@ -827,6 +836,10 @@ a:hover {
 	line-height: 23px;
 	height: 160px;
 	overflow: hidden;
+}
+
+.card .card-hover-box .card-info .text strong {
+	display: block;
 }
 
 .card .card-hover-box .card-info .btn {

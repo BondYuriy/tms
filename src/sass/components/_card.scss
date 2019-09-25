@@ -15,6 +15,7 @@
     transform: translateX(-50%);
 
     & .card-img {
+      display: block;
       height: 220px;
       border-radius: 8px;
       display: flex;
@@ -40,15 +41,23 @@
         margin-bottom: 12px;
       }
 
-      .title {
+      & .title-link {
+        display: block;
         height: 50px;
-        color: #232d3d;
-        font-family: $Raleway;
-        font-size: 21px;
-        font-weight: $bold;
-        line-height: 24px;
-        overflow: hidden;
         margin-bottom: 20px;
+        overflow: hidden;
+
+        & .title {
+          color: $text-color;
+          font-family: $Raleway;
+          font-size: 21px;
+          font-weight: $bold;
+          line-height: 24px;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
       }
 
       & .text {
@@ -56,6 +65,10 @@
         line-height: 23px;
         height: 160px;
         overflow: hidden;
+
+        & strong {
+          display: block;
+        }
       }
 
       & .btn {
