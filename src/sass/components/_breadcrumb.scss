@@ -1,0 +1,23 @@
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 36px 0;
+
+  & li {
+    & a {
+      font-size: 16px;
+      font-weight: 400;
+      color: #b2b0b0;
+    }
+  }
+
+  & .breadcrumb-item + .breadcrumb-item::before {
+    color: #d6d6d6;
+    font-size: 16px;
+  }
+
+  & .active {
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

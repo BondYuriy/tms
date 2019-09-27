@@ -331,6 +331,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.main {
+	padding-top: 190px;
+}
+
 .btn {
 	border: 0;
 	margin: 0;
@@ -979,7 +983,7 @@ a:hover {
 
 .gallery-video-card {
 	display: block;
-	height: 252px;
+	height: 298px;
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
@@ -999,31 +1003,123 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 5px;
-	background-image: linear-gradient(-1deg, #090d14 0%, rgba(19, 19, 19, 0.2) 100%);
+	background-image: linear-gradient(-1deg, #090d14 0%, rgba(19, 19, 19, 0.68) 100%);
 	position: absolute;
 	top: 0;
 	z-index: 1;
+	opacity: 0.6;
+	transition: 0.5s;
 }
 
 .gallery-video-card .gallery-card-info img {
-	display: block;
-	margin: 90px auto 60px auto;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
 }
 
-.gallery-video-card .gallery-card-info .title {
-	margin: 0;
+.gallery-video-card .gallery-card-info .card-title-box {
 	width: 85%;
-	margin: auto;
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	transform: translateX(-50%);
+}
+
+.gallery-video-card .gallery-card-info .card-title-box .title {
+	margin: 0;
+	height: 47px;
+	overflow: hidden;
 	color: #f8fbfd;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
 	border-top: 1px solid #f8fbfd;
 	padding-top: 14px;
+	margin-bottom: 15px;
+}
+
+.gallery-video-card .gallery-card-info .card-title-box span {
+	display: block;
+	color: #a5a8ac;
 }
 
 .gallery-video-card:hover .gallery-card-info {
+	opacity: 1;
+}
+
+.gallery-video-card-small {
+	height: 252px;
+}
+
+.gallery-video-card-small .gallery-card-info .card-title-box span {
+	display: none;
+}
+
+.gallery-video-card-big {
+	height: 402px;
+}
+
+.gallery-photo-card {
+	display: block;
+	width: 100%;
+	height: 302px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery-photo-card .gallery-card-img {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-photo-card .gallery-card-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.gallery-photo-card::before {
+	display: block;
+	content: "";
 	background-image: linear-gradient(-1deg, #090d14 0%, rgba(19, 19, 19, 0.68) 100%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.5s 0s;
+}
+
+.gallery-photo-card .title {
+	display: block;
+	margin: 0;
+	width: 85%;
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	transform: translateX(-50%);
+	height: 47px;
+	overflow: hidden;
+	color: #f8fbfd;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-top: 1px solid #f8fbfd;
+	padding-top: 14px;
+	margin-bottom: 15px;
+	opacity: 0;
+	transition: 0.5s 0.2s;
+}
+
+.gallery-photo-card:hover::before {
+	opacity: 1;
+}
+
+.gallery-photo-card:hover .title {
+	opacity: 1;
 }
 
 .social {
@@ -1078,6 +1174,28 @@ a:hover {
 
 .social ul li .icon-soundcloud:hover svg {
 	fill: #fff;
+}
+
+.breadcrumb {
+	background-color: rgba(0, 0, 0, 0);
+	padding: 36px 0;
+}
+
+.breadcrumb li a {
+	font-size: 16px;
+	font-weight: 400;
+	color: #b2b0b0;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+	color: #d6d6d6;
+	font-size: 16px;
+}
+
+.breadcrumb .active {
+	color: #d6d6d6;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .footer-wrapper {
@@ -1254,6 +1372,26 @@ a:hover {
 
 .home-category-item .title-box {
 	margin-bottom: 72px;
+}
+
+.gallery {
+	padding: 0 0 82px 0;
+}
+
+.gallery .gallery-video-card {
+	margin-bottom: 24px;
+}
+
+.gallery .gallery-video-card-big {
+	margin-bottom: 31px;
+}
+
+.gallery .gallery-photo-card {
+	margin-bottom: 30px;
+}
+
+.gallery .btn {
+	margin-top: 76px;
 }
 
 /* header navigations */

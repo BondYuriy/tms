@@ -1,0 +1,19 @@
+.gallery {
+  padding: 0 0 82px 0;
+
+  & .gallery-video-card {
+    margin-bottom: 24px;
+  }
+
+  & .gallery-video-card-big {
+    margin-bottom: 31px;
+  }
+
+  & .gallery-photo-card {
+    margin-bottom: 30px;
+  }
+
+  & .btn {
+    margin-top: 76px;
+  }
+}
