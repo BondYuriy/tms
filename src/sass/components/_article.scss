@@ -1,0 +1,43 @@
+.article {
+  padding: 0 0 50px 0;
+
+  & .date {
+    display: block;
+    color: rgba(51, 67, 93, 0.71);
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+
+  & .title {
+    font-family: $Raleway;
+    font-size: 27px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  & ul {
+    padding-left: 45px;
+
+    & li {
+      display: flex;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        flex: 0 0 8px;
+        height: 2px;
+        background-color: $blue-color;
+        margin: 10px 5px 0 0;
+      }
+    }
+  }
+}

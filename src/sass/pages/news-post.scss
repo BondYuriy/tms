@@ -1,0 +1,15 @@
+.news-post {
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 370px;
+    content: "";
+    background-color: #f8fbfd;
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
