@@ -1,0 +1,44 @@
+.pagination {
+  padding: 60px 0 107px 0;
+  justify-content: center;
+  align-items: center;
+
+  & li {
+    margin-right: 12px;
+
+    &:first-child {
+      margin-right: 100px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 88px;
+    }
+  }
+
+  & a,
+  span {
+    padding: 0;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50% !important;
+    background-color: $hover-color !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 12px;
+  }
+
+  & a {
+    opacity: 0.45;
+
+    &:hover {
+      opacity: 1;
+      color: $white-color;
+    }
+  }
+}

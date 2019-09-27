@@ -2,6 +2,7 @@
   border: 0;
   height: 570px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0) !important;
 
   & .card-hover-box {
     width: 350px;
@@ -80,6 +81,7 @@
     }
 
     &:hover {
+      background-color: rgba(255, 255, 255, 1) !important;
       width: 380px;
       height: 590px;
       box-shadow: 0 3px 20px rgba(0, 0, 0, 0.09);

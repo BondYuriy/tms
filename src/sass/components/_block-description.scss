@@ -1,11 +1,12 @@
 .block-description {
   color: $hover-color;
+  text-align: left;
 
   & .title-box {
     margin-bottom: 40px;
   }
 
   & .btn {
-    margin-top: 26px;
+    margin: 26px 0 0 0;
   }
 }

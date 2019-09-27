@@ -35,5 +35,17 @@
       display: block;
       margin: 90px auto 0 auto;
     }
+
+    & .block-description {
+      color: $white-color;
+
+      & .title-box .title strong {
+        color: $white-color;
+      }
+
+      & .btn {
+        margin: 40px auto 0 0;
+      }
+    }
   }
 }
