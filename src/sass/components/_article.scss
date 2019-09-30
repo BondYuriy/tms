@@ -1,6 +1,17 @@
 .article {
   padding: 0 0 50px 0;
 
+  & a {
+    color: #04a5ff;
+    margin-left: 5px;
+    border-bottom: 1px dashed #04a5ff;
+  }
+
+  & .btn {
+    margin-left: 0;
+    border-bottom: 0;
+  }
+
   & .date {
     display: block;
     color: rgba(51, 67, 93, 0.71);
@@ -39,5 +50,12 @@
         margin: 10px 5px 0 0;
       }
     }
+  }
+
+  & .article-btn-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
   }
 }

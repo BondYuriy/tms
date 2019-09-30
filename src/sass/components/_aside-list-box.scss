@@ -1,5 +1,6 @@
 .aside-list-box {
-  padding-right: 20px;
+  padding-bottom: 50px;
+  margin: 0 -15px 0 -15px;
 
   & .title-box {
     margin-bottom: 37px;
@@ -7,14 +8,14 @@
 
   & .news-list {
     & li {
-      margin-bottom: 28px;
-
       & a {
+        display: block;
         color: $text-color;
         font-family: $Roboto;
         font-size: $font-text;
         font-weight: $Regular;
         line-height: 20px;
+        padding: 10px 30px 10px 15px;
 
         & span {
           display: block;
@@ -30,6 +31,10 @@
           font-size: 21px;
           font-weight: $bold;
           line-height: 24px;
+        }
+
+        &:hover {
+          background-color: #edf3f7;
         }
       }
     }
