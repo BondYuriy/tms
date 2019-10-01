@@ -1899,6 +1899,151 @@ a:hover {
 	margin-top: 22px;
 }
 
+.requst {
+	padding: 70px 0 130px 0;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+}
+
+.requst-info {
+	flex: 0 0 28%;
+	background-color: #edf3f7;
+	border-radius: 8px 0 0 8px;
+	padding: 30px 15px;
+}
+
+.requst-info h2 {
+	color: #04a5ff;
+	font-family: "Raleway", sans-serif;
+	font-size: 27px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.requst-info ul {
+	padding-left: 40px;
+	margin-bottom: 50px;
+}
+
+.requst-info ul li {
+	position: relative;
+	margin-bottom: 18px;
+}
+
+.requst-info ul li::before {
+	display: inline-block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #605f5f;
+	position: absolute;
+	left: -12px;
+	top: 7px;
+}
+
+.requst-info ul li .name {
+	font-weight: 700;
+}
+
+.requst-info ul li a {
+	color: #232d3d;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.requst-info .btn {
+	display: block;
+	width: 186px;
+	height: 46px;
+	border-radius: 29px;
+	line-height: 46px;
+	margin: 28px auto 0 auto;
+}
+
+.requst-form {
+	flex: 0 0 72%;
+	border-radius: 0 8px 8px 0;
+	background-color: #232d3d;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	color: #fff;
+	padding: 30px 40px 46px 40px;
+}
+
+.requst-form .title {
+	color: #f8fbfd;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 23px;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+
+.requst-form .contact-data {
+	flex: 0 0 35%;
+}
+
+.requst-form .requisites-box {
+	flex: 0 0 60%;
+}
+
+.requst-form .requisites-box .form-box,
+.requst-form .contact-data .form-box {
+	margin-bottom: 13px;
+}
+
+.requst-form .requisites-box .form-box label,
+.requst-form .contact-data .form-box label {
+	margin-bottom: 2px;
+	padding-left: 8px;
+}
+
+.requst-form .requisites-box .form-box input,
+.requst-form .requisites-box .form-box textarea,
+.requst-form .contact-data .form-box input,
+.requst-form .contact-data .form-box textarea {
+	border: 0;
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+	padding: 10px;
+	resize: none;
+}
+
+.requst-form .requisites-box .form-box input:focus,
+.requst-form .requisites-box .form-box textarea:focus,
+.requst-form .contact-data .form-box input:focus,
+.requst-form .contact-data .form-box textarea:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.requst-form .requisites-box .form-box input,
+.requst-form .contact-data .form-box input {
+	height: 34px;
+}
+
+.requst-form .requisites-box .form-group-box,
+.requst-form .contact-data .form-group-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.requst-form .requisites-box .form-group-box .form-box,
+.requst-form .contact-data .form-group-box .form-box {
+	flex: 0 0 47%;
+}
+
+.requst-form .btn {
+	display: block;
+	margin: 44px auto 0 auto;
+}
+
 /* header navigations */
 
 @media (min-width: 320px) {

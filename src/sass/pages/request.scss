@@ -1,0 +1,137 @@
+.requst {
+  padding: 70px 0 130px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+}
+
+.requst-info {
+  flex: 0 0 28%;
+  background-color: #edf3f7;
+  border-radius: 8px 0 0 8px;
+  padding: 30px 15px;
+
+  & h2 {
+    color: $blue-color;
+    font-family: $Raleway;
+    font-size: 27px;
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  & ul {
+    padding-left: 40px;
+    margin-bottom: 50px;
+
+    & li {
+      position: relative;
+      margin-bottom: 18px;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #605f5f;
+        position: absolute;
+        left: -12px;
+        top: 7px;
+      }
+
+      & .name {
+        font-weight: 700;
+      }
+
+      & a {
+        color: $text-color;
+        font-size: $font-text;
+        font-weight: $Regular;
+      }
+    }
+  }
+
+  & .btn {
+    display: block;
+    width: 186px;
+    height: 46px;
+    border-radius: 29px;
+    line-height: 46px;
+    margin: 28px auto 0 auto;
+  }
+}
+
+.requst-form {
+  flex: 0 0 72%;
+  border-radius: 0 8px 8px 0;
+  background-color: #232d3d;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $white-color;
+  padding: 30px 40px 46px 40px;
+
+  & .title {
+    color: #f8fbfd;
+    font-size: 17px;
+    font-weight: $Medium;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  & .contact-data {
+    flex: 0 0 35%;
+  }
+
+  & .requisites-box {
+    flex: 0 0 60%;
+  }
+
+  & .requisites-box,
+  .contact-data {
+    & .form-box {
+      margin-bottom: 13px;
+
+      & label {
+        margin-bottom: 2px;
+        padding-left: 8px;
+      }
+
+      & input,
+      textarea {
+        border: 0;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+        resize: none;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      & input {
+        height: 34px;
+      }
+    }
+
+    & .form-group-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & .form-box {
+        flex: 0 0 47%;
+      }
+    }
+  }
+
+  & .btn {
+    display: block;
+    margin: 44px auto 0 auto;
+  }
+}
