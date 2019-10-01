@@ -1504,27 +1504,112 @@ a:hover {
 
 .tab-content .tab-pane .program .program-info .program-info-list {
 	height: 520px;
-	overflow-y: scroll;
+	padding-right: 10px;
+	overflow-y: scroll !important;
 }
 
 .tab-content .tab-pane .program .program-info .program-info-list::-webkit-scrollbar-track {
-	background-color: rgba(202, 212, 229, 0.27);
-	border-radius: 12px;
+	background-color: rgba(202, 212, 229, 0.27) !important;
+	border-radius: 12px !important;
 }
 
 .tab-content .tab-pane .program .program-info .program-info-list::-webkit-scrollbar {
-	width: 7px;
-	background-color: rgba(202, 212, 229, 0.27);
-	border-radius: 12px;
+	width: 7px !important;
+	background-color: rgba(202, 212, 229, 0.27) !important;
+	border-radius: 12px !important;
 }
 
 .tab-content .tab-pane .program .program-info .program-info-list::-webkit-scrollbar-thumb {
-	border-radius: 12px;
-	background-color: #cad4e5;
+	border-radius: 12px !important;
+	background-color: #cad4e5 !important;
 }
 
 .tab-content .tab-pane .program .program-info .program-info-list > li {
 	margin-bottom: 28px;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 23px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-img {
+	flex: 0 0 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-info {
+	flex: 0 0 72%;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-info .title {
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-info .title strong {
+	color: #04a5ff;
+	font-size: 22px;
+	font-weight: 700;
+	margin-left: 5px;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-info span {
+	display: block;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.tab-content .tab-pane .teachers-box .teachers-item .teachers-item-info p {
+	margin-bottom: 25px;
+}
+
+.tab-content .tab-pane .description-box .description-box-list {
+	background-color: #fff;
+	padding: 40px 40px 40px 70px;
+	margin-bottom: 79px;
+}
+
+.tab-content .tab-pane .description-box .description-box-list .description-box-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+.tab-content .tab-pane .description-box .description-box-list .description-box-item .title {
+	flex: 0 0 25%;
+	margin: 0;
+	color: #04a5ff;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 23px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.tab-content .tab-pane .description-box .description-box-list .description-box-item .text {
+	flex: 0 0 73%;
+}
+
+.tab-content .tab-pane .description-box .btn {
+	display: block;
+	margin: auto;
 }
 
 .footer-wrapper {

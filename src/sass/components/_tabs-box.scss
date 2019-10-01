@@ -109,28 +109,117 @@
 
       & .program-info-list {
         height: 520px;
-        overflow-y: scroll;
+        padding-right: 10px;
+        overflow-y: scroll !important;
 
         &::-webkit-scrollbar-track {
-          background-color: rgba(202, 212, 229, 0.27);
-          border-radius: 12px;
+          background-color: rgba(202, 212, 229, 0.27) !important;
+          border-radius: 12px !important;
         }
 
         &::-webkit-scrollbar {
-          width: 7px;
-          background-color: rgba(202, 212, 229, 0.27);
-          border-radius: 12px;
+          width: 7px !important;
+          background-color: rgba(202, 212, 229, 0.27) !important;
+          border-radius: 12px !important;
         }
 
         &::-webkit-scrollbar-thumb {
-          border-radius: 12px;
-          background-color: #cad4e5;
+          border-radius: 12px !important;
+          background-color: #cad4e5 !important;
         }
 
         & > li {
           margin-bottom: 28px;
         }
       }
+    }
+  }
+
+  & .tab-pane .teachers-box {
+    & .teachers-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 23px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      & .teachers-item-img {
+        flex: 0 0 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & .teachers-item-info {
+        flex: 0 0 72%;
+        padding: 20px;
+        background-color: $white;
+
+        & .title {
+          font-size: 22px;
+          font-weight: 500;
+          text-transform: capitalize;
+          margin-bottom: 25px;
+
+          & strong {
+            color: #04a5ff;
+            font-size: 22px;
+            font-weight: 700;
+            margin-left: 5px;
+          }
+        }
+
+        & span {
+          display: block;
+          color: #000000;
+          font-size: 14px;
+          margin-bottom: 25px;
+        }
+
+        & p {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  & .tab-pane .description-box {
+    & .description-box-list {
+      background-color: $white;
+      padding: 40px 40px 40px 70px;
+      margin-bottom: 79px;
+
+      & .description-box-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+
+        & .title {
+          flex: 0 0 25%;
+          margin: 0;
+          color: $blue-color;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 23px;
+          text-transform: uppercase;
+          text-align: right;
+        }
+
+        & .text {
+          flex: 0 0 73%;
+        }
+      }
+    }
+
+    & .btn {
+      display: block;
+      margin: auto;
     }
   }
 }
