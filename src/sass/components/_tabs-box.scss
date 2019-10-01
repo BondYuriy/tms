@@ -1,0 +1,136 @@
+.tabs-box {
+  padding-bottom: 100px;
+
+  & .nav {
+    align-items: center;
+    height: 190px;
+    margin-top: -127px;
+
+    & li a {
+      color: #f8fbfd;
+      font-family: $Raleway;
+      font-weight: $bold;
+    }
+  }
+
+  & .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 415px;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    padding-top: 35px;
+    background-color: rgba(7, 14, 25, 0.84);
+    opacity: 1;
+
+    & img {
+      display: block;
+      width: 52px;
+      height: 72px;
+      margin: 0 auto 20px auto;
+      opacity: 1;
+    }
+
+    & span {
+      display: block;
+      font-size: 26px;
+      line-height: 30px;
+      background-color: #04a5ff;
+      padding: 17px 0;
+      opacity: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  & .nav-pills .nav-link {
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 345px;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(7, 14, 25, 0.57);
+    padding-top: 34px;
+
+    & img {
+      display: block;
+      width: 50px;
+      height: 51px;
+      margin: 0 auto 26px auto;
+      opacity: 0.5;
+    }
+
+    & span {
+      display: block;
+      background-color: #070e19;
+      padding: 10px 0 12px 0;
+      font-size: 26px;
+      line-height: 27px;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 54px;
+
+  & .title {
+    font-size: 14px;
+    font-weight: $Medium;
+    text-transform: uppercase;
+  }
+
+  & .tab-pane .program {
+    background-color: $white-color;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 570px;
+
+    & .program-img {
+      flex: 0 0 40%;
+      height: 100%;
+      overflow: hidden;
+
+      & img {
+        display: block;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    & .program-info {
+      flex: 0 0 60%;
+      padding: 30px;
+      height: 400px;
+
+      & .program-info-list {
+        height: 520px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+          background-color: rgba(202, 212, 229, 0.27);
+          border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar {
+          width: 7px;
+          background-color: rgba(202, 212, 229, 0.27);
+          border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 12px;
+          background-color: #cad4e5;
+        }
+
+        & > li {
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+}

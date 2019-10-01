@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 @import "common/owl.carousel.scss";
+@import "components/_scrollbar.scss";
 @import "components/_carousel.scss";
 @import "common/variables.scss";
 @import "common/indents.scss";
@@ -24,9 +25,11 @@
 @import "components/_pagination.scss";
 @import "components/_aside-list-box.scss";
 @import "components/_article.scss";
+@import "components/_tabs-box.scss";
 @import "common/footer.scss";
 @import "pages/home.scss";
 @import "pages/gallery.scss";
 @import "pages/news-archive.scss";
 @import "pages/news-post.scss";
+@import "pages/course-program.scss";
 @import "common/responsive.scss";
