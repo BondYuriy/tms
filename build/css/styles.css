@@ -1612,6 +1612,151 @@ a:hover {
 	margin: auto;
 }
 
+.modal-calendar {
+	background-color: rgba(255, 255, 255, 0.98);
+}
+
+.modal-calendar .modal-dialog {
+	max-width: 800px;
+}
+
+.modal-calendar .modal-dialog .modal-content {
+	border: 0;
+	box-shadow: 8px 18px 51px rgba(181, 229, 255, 0.25);
+	border-radius: 8px;
+	background-color: #ebf2fd;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-header {
+	border: 0;
+	padding: 12px 21px;
+	align-items: center;
+	margin-bottom: 3px;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-header h5 {
+	margin: 0;
+	color: #04a5ff;
+	font-family: "Raleway", sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-header .btn-box {
+	display: flex;
+	align-items: center;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-header .btn-box span {
+	margin: 0 13px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 23px;
+	text-transform: uppercase;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item {
+	position: relative;
+	box-shadow: 2px 6px 30px rgba(185, 192, 232, 0.25);
+	border-radius: 11px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 15px 8px 15px;
+	overflow: hidden;
+	margin-bottom: 27px;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-header {
+	height: 24px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .bc-violet {
+	background-color: #b9c0e8;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .c-violet {
+	color: #b9c0e8;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .bc-green {
+	background-color: #bee0a1;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .c-green {
+	color: #bee0a1;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .bc-pink {
+	background-color: #fab4b8;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .c-pink {
+	color: #fab4b8;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .bc-blue {
+	background-color: #96d9ff;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .c-blue {
+	color: #96d9ff;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .bc-yellow {
+	background-color: #ffe200;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .c-yellow {
+	color: #ffe200;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-info {
+	flex: 0 0 72%;
+	color: #606771;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-info h4 {
+	color: #232d3d;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 23px;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-info .date {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-price {
+	flex: 0 0 23%;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-price p {
+	padding-left: 29px;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-body .calendar-modal-item .calendar-modal-item-price p strong {
+	display: block;
+	font-weight: 500;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-footer {
+	border: 0;
+}
+
+.modal-calendar .modal-dialog .modal-content .modal-footer .btn {
+	display: block;
+	margin: auto;
+	background-color: rgba(33, 169, 245, 0.11) !important;
+}
+
 .footer-wrapper {
 	background-color: #232d3d;
 	padding: 45px 0;
@@ -2074,6 +2219,7 @@ a:hover {
 
 .calendar-list {
 	padding-bottom: 70px;
+	position: relative;
 }
 
 .calendar-card {
