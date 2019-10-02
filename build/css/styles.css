@@ -2044,6 +2044,27 @@ a:hover {
 	margin: 44px auto 0 auto;
 }
 
+.request-finish {
+	text-align: center;
+	padding: 80px 0 126px 0;
+}
+
+.request-finish .title {
+	margin: 0;
+	color: #04a5ff;
+	font-family: "Raleway", sans-serif;
+	font-size: 27px;
+	font-weight: 700;
+}
+
+.request-finish p {
+	margin-bottom: 25px;
+}
+
+.request-finish .btn {
+	margin-top: 47px;
+}
+
 /* header navigations */
 
 @media (min-width: 320px) {
