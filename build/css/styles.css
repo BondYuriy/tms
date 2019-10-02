@@ -2065,6 +2065,204 @@ a:hover {
 	margin-top: 47px;
 }
 
+.calendar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 15px 45px 15px;
+}
+
+.calendar-list {
+	padding-bottom: 70px;
+}
+
+.calendar-card {
+	height: 360px;
+	border-radius: 12px;
+	background-color: #ebf2fd;
+	margin-bottom: 44px;
+}
+
+.calendar-card:hover {
+	box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-card .calendar-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 26px 20px 26px;
+}
+
+.calendar-card .calendar-card-header .title {
+	margin: 0;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 23px;
+	text-transform: uppercase;
+}
+
+.calendar-card .calendar-card-main {
+	height: 265px;
+	overflow-y: scroll;
+	padding: 5px 16px 20px 16px;
+	margin-right: 15px;
+}
+
+.calendar-card .calendar-card-main::-webkit-scrollbar-track {
+	background-color: #f8fbff !important;
+	border-radius: 12px !important;
+}
+
+.calendar-card .calendar-card-main::-webkit-scrollbar {
+	width: 6px !important;
+	background-color: #f8fbff !important;
+	border-radius: 12px !important;
+}
+
+.calendar-card .calendar-card-main::-webkit-scrollbar-thumb {
+	border-radius: 12px !important;
+	background-color: #cad4e5 !important;
+}
+
+.calendar-card .calendar-card-main .calendar-event {
+	display: flex;
+	align-items: center;
+	min-height: 50px;
+	box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.08);
+	border-radius: 11px;
+	background-color: #fff;
+	padding: 5px 15px 5px 5px;
+	color: #232d3d;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .sticker-new {
+	position: absolute;
+	right: 46px;
+	top: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event:hover {
+	box-shadow: 2px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-card .calendar-card-main .calendar-event .date {
+	flex: 0 0 20%;
+	display: block;
+	font-weight: 500;
+	text-align: center;
+}
+
+.calendar-card .calendar-card-main .calendar-event .title {
+	flex: 0 0 60%;
+	height: 100%;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-right: auto;
+	padding-left: 14px;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-pink {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-pink::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #f6ddce;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-green {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-green::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #88c369;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-yellow {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-yellow::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #f5f700;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-blue {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-blue::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #7ed2fa;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-violet {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-violet::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #b836f2;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-viole-light {
+	position: relative;
+}
+
+.calendar-card .calendar-card-main .calendar-event .event-color-viole-light::before {
+	display: block;
+	content: "";
+	width: 5px;
+	border-radius: 4px;
+	background-color: #b9c0e8;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
 /* header navigations */
 
 @media (min-width: 320px) {
