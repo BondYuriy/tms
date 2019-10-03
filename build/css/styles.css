@@ -246,7 +246,8 @@
 }
 
 .events-carousel {
-	width: 400px;
+	width: 420px;
+	height: 460px;
 	margin: auto;
 }
 
@@ -255,15 +256,37 @@
 }
 
 .events-carousel .item {
-	height: 400px;
-	opacity: 0.4;
+	height: 420px;
+	opacity: 0.9;
 	transition: 0.4s ease all;
 	transform: scale(0.6);
 	border-radius: 8px;
 }
 
+.events-carousel .item .event-card {
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.events-carousel .item .event-card .event-card-img {
+	height: 285px;
+}
+
+.events-carousel .item .event-card .event-card-img::before {
+	background-image: linear-gradient(to top, #02050a 0%, rgba(45, 59, 82, 0.9) 100%);
+	opacity: 0.9;
+}
+
+.events-carousel .item .event-card .event-card-img .event-card-title h4 {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.events-carousel .item .event-card .event-card-info {
+	display: none;
+}
+
 .events-carousel .active {
-	z-index: 10000;
+	z-index: 5;
 }
 
 .events-carousel .active .item {
@@ -274,7 +297,82 @@
 	bottom: 0;
 	opacity: 1;
 	transform: scale(1);
-	z-index: 5;
+	z-index: 10;
+}
+
+.events-carousel .active .item .event-card {
+	height: 420px;
+	background-color: white;
+}
+
+.events-carousel .active .item .event-card .event-card-img {
+	height: 230px;
+}
+
+.events-carousel .active .item .event-card .event-card-img::before {
+	background-image: linear-gradient(to top, #02050a 0%, rgba(45, 59, 82, 0.53) 100%);
+	opacity: 0.68;
+}
+
+.events-carousel .active .item .event-card .event-card-img .event-card-title h4 {
+	color: white;
+}
+
+.events-carousel .active .item .event-card .event-card-info {
+	display: block;
+}
+
+.events-carousel .owl-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 100px;
+	z-index: 0;
+}
+
+.events-carousel .owl-nav .owl-prev {
+	margin-right: 600px;
+}
+
+.events-carousel .owl-nav .owl-prev::before {
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-image: url("../img/Group_88.svg");
+	opacity: 0.7;
+}
+
+.events-carousel .owl-nav .owl-next::before {
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-image: url("../img/Group_43.svg");
+}
+
+.events-carousel .owl-nav .owl-prev,
+.events-carousel .owl-nav .owl-next {
+	width: 24px;
+	height: 24px;
+}
+
+.events-carousel .owl-nav .owl-prev span,
+.events-carousel .owl-nav .owl-next span {
+	display: none;
+}
+
+.events-carousel .owl-nav .owl-prev:hover::before,
+.events-carousel .owl-nav .owl-next:hover::before {
+	opacity: 0.3;
+}
+
+.events-carousel .owl-nav .owl-prev:focus,
+.events-carousel .owl-nav .owl-next:focus {
+	outline: none;
 }
 
 /* Colors */
@@ -1794,18 +1892,31 @@ a:hover {
 }
 
 .event-card {
-	height: 400px;
-	background-color: #fff;
+	width: 420px;
 	padding: 7px;
-	box-shadow: 9px 8px 43px rgba(35, 45, 61, 0.1);
 	border-radius: 8px;
+	box-shadow: 9px 8px 43px rgba(35, 45, 61, 0.1);
+	transition: 0s;
 }
 
 .event-card .event-card-img {
+	display: block;
+	width: 100%;
+	height: 230px;
 	position: relative;
 	border-radius: 8px;
 	overflow: hidden;
 	margin-bottom: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0s;
+}
+
+.event-card .event-card-img img {
+	display: block;
+	height: 100%;
+	width: auto;
 }
 
 .event-card .event-card-img::before {
@@ -1837,7 +1948,6 @@ a:hover {
 }
 
 .event-card .event-card-img .event-card-title h4 {
-	color: #ffffff;
 	font-family: "Raleway", sans-serif;
 	font-size: 25px;
 	font-weight: 700;
@@ -1849,8 +1959,14 @@ a:hover {
 }
 
 .event-card .event-card-info .event-card-info-text {
-	height: 100px;
+	height: 86px;
 	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.event-card .btn {
+	display: block;
+	margin: auto;
 }
 
 .footer-wrapper {

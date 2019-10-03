@@ -42,7 +42,7 @@ $(document).ready(function() {
 
   $(".events-carousel").owlCarousel({
     loop: true,
-    margin: -110,
+    margin: -140,
     nav: true,
     responsive: {
       0: {
