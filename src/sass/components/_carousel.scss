@@ -1,0 +1,35 @@
+.events-carousel-box {
+  overflow: hidden;
+}
+
+.events-carousel {
+  width: 400px;
+  margin: auto;
+
+  & .owl-stage-outer {
+    overflow: visible;
+  }
+
+  & .item {
+    height: 400px;
+    opacity: 0.4;
+    transition: 0.4s ease all;
+    transform: scale(0.6);
+    border-radius: 8px;
+  }
+
+  & .active {
+    z-index: 10000;
+
+    & .item {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 1;
+      transform: scale(1);
+      z-index: 5;
+    }
+  }
+}

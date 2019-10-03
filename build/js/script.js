@@ -39,4 +39,18 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(".events-carousel").owlCarousel({
+    loop: true,
+    margin: -110,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      }
+    }
+  });
 });

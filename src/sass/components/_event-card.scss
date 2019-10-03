@@ -1,0 +1,63 @@
+.event-card {
+  height: 400px;
+  background-color: $white;
+  padding: 7px;
+  box-shadow: 9px 8px 43px rgba(35, 45, 61, 0.1);
+  border-radius: 8px;
+
+  & .event-card-img {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    &::before {
+      display: block;
+      content: "";
+      background-image: linear-gradient(
+        to top,
+        #02050a 0%,
+        rgba(45, 59, 82, 0.53) 100%
+      );
+      border-radius: 8px;
+      opacity: 0.68;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    & .event-card-title {
+      position: absolute;
+      bottom: 10px;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      & span {
+        color: rgba(255, 255, 255, 0.67);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+      }
+
+      & h4 {
+        color: #ffffff;
+        font-family: $Raleway;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  & .event-card-info {
+    width: 80%;
+    margin: auto;
+
+    & .event-card-info-text {
+      height: 100px;
+      overflow: hidden;
+    }
+  }
+}

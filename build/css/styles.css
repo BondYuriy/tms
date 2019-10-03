@@ -241,6 +241,42 @@
 	width: 100%;
 }
 
+.events-carousel-box {
+	overflow: hidden;
+}
+
+.events-carousel {
+	width: 400px;
+	margin: auto;
+}
+
+.events-carousel .owl-stage-outer {
+	overflow: visible;
+}
+
+.events-carousel .item {
+	height: 400px;
+	opacity: 0.4;
+	transition: 0.4s ease all;
+	transform: scale(0.6);
+	border-radius: 8px;
+}
+
+.events-carousel .active {
+	z-index: 10000;
+}
+
+.events-carousel .active .item {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 1;
+	transform: scale(1);
+	z-index: 5;
+}
+
 /* Colors */
 
 /* Fonts */
@@ -1755,6 +1791,66 @@ a:hover {
 	display: block;
 	margin: auto;
 	background-color: rgba(33, 169, 245, 0.11) !important;
+}
+
+.event-card {
+	height: 400px;
+	background-color: #fff;
+	padding: 7px;
+	box-shadow: 9px 8px 43px rgba(35, 45, 61, 0.1);
+	border-radius: 8px;
+}
+
+.event-card .event-card-img {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.event-card .event-card-img::before {
+	display: block;
+	content: "";
+	background-image: linear-gradient(to top, #02050a 0%, rgba(45, 59, 82, 0.53) 100%);
+	border-radius: 8px;
+	opacity: 0.68;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.event-card .event-card-img .event-card-title {
+	position: absolute;
+	bottom: 10px;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.event-card .event-card-img .event-card-title span {
+	color: rgba(255, 255, 255, 0.67);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.event-card .event-card-img .event-card-title h4 {
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.event-card .event-card-info {
+	width: 80%;
+	margin: auto;
+}
+
+.event-card .event-card-info .event-card-info-text {
+	height: 100px;
+	overflow: hidden;
 }
 
 .footer-wrapper {
