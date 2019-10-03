@@ -1,0 +1,42 @@
+.review-card {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  background-color: $white;
+  display: flex;
+  padding: 20px 30px;
+  margin: 20px;
+  transform: rotate(270deg);
+
+  & .review-card-img {
+    flex: 0 0 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 28px;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .review-card-info {
+    color: rgba(35, 45, 61, 0.74);
+
+    & .name {
+      display: block;
+      width: 145px;
+      height: 30px;
+      border-radius: 20px;
+      background-color: rgba(165, 168, 172, 0.15);
+      color: $blue-color;
+      font-size: 13px;
+      font-weight: $bold;
+      line-height: 30px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+}

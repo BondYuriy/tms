@@ -53,4 +53,18 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(".review-carousel").owlCarousel({
+    loop: true,
+    margin: -635,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      200: {
+        items: 1
+      }
+    }
+  });
 });
