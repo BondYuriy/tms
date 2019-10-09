@@ -47,19 +47,19 @@
   background-color: $text-color;
 }
 
-.navigations .navbar {
+.navbar {
   padding: 0;
-  height: 60px;
 
-  & .collapse.navbar-collapse {
-    height: 100%;
+  & .navbar-nav {
+    width: 100%;
+    height: 60px;
 
-    & ul li {
+    & li {
       & a {
         display: flex;
         align-items: center;
         height: 60px;
-        padding: 0 26px;
+        padding: 0 26px !important;
         color: $white-color;
         font-family: $Raleway;
         font-size: 16px;

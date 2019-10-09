@@ -79,24 +79,5 @@
         bottom: 20px;
       }
     }
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 1) !important;
-      width: 380px;
-      height: 590px;
-      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.09);
-      background-color: #fcfeff;
-      top: -20px;
-
-      & .card-img {
-        height: 245px;
-      }
-
-      & .card-info {
-        & .btn {
-          display: block;
-        }
-      }
-    }
   }
 }
