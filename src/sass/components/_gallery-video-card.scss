@@ -6,12 +6,14 @@
   overflow: hidden;
 
   & .gallery-card-img {
+    height: 100%;
     border-radius: 7px;
     overflow: hidden;
 
     & img {
       display: block;
       width: 100%;
+      height: auto;
     }
   }
 
@@ -72,7 +74,7 @@
 }
 
 .gallery-video-card-small {
-  height: 252px;
+  height: 245px;
 
   & .gallery-card-info .card-title-box span {
     display: none;

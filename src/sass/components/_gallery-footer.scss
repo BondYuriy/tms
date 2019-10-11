@@ -1,5 +1,6 @@
 .gallery-footer-wrapper {
   position: relative;
+  z-index: 1;
 
   & .gallery-wrapper-img {
     position: absolute;

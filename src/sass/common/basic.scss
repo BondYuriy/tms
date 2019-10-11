@@ -12,7 +12,6 @@ body {
   font-weight: $Regular;
   font-size: $font-text;
   color: $text-color;
-  background: #f8fbfd;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -20,6 +19,7 @@ body {
 
 main {
   flex-grow: 1;
+  background: #f8fbfd;
 }
 
 footer {
@@ -47,6 +47,4 @@ a {
 
 .main-style {
   background-color: #fff;
-  position: relative;
-  z-index: -1;
 }
