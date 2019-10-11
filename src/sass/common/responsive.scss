@@ -606,6 +606,15 @@
   }
 }
 
+@media (max-width: 575px) {
+  .gallery-video-card .gallery-card-info img {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* modal-calendar */
 
 @media (max-width: 767px) {

@@ -3505,6 +3505,13 @@ body.sticky-header .header-main {
 	padding-bottom: 40px;
 }
 
+.gallery-video-card .gallery-card-info img {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -50%);
+}
+
 .tabs-box {
 	width: 290px;
 	margin: auto;
